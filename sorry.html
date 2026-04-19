@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sorry Nannaluuuuu my loveee❤️</title>
+
+<style>
+body {
+    margin: 0;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    text-align: center;
+    font-family: Arial;
+    color: white;
+    overflow-x: hidden;
+}
+
+h1 { font-size: 45px; }
+
+.slider {
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.slides {
+    display: flex;
+    width: 6000px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.yes { background: white; color: #ff4b5c; }
+.no { background: #ff4b5c; color: white; position: absolute; }
+
+.heart {
+    position: fixed;
+    bottom: -10px;
+    font-size: 20px;
+    animation: float 5s linear infinite;
+}
+
+@keyframes float {
+    to { transform: translateY(-800px); opacity: 0; }
+}
+
+#letter {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    color: #ff4b5c;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+#gameArea {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 2px dashed white;
+    margin-top: 10px;
+    overflow: hidden;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Sorry Nannaluuuuu my loveuuuuu😔❤️</h1> 
+
+<div class="slider">
+    <div class="slides" id="slides">
+    <img src="img1.jpg">
+    <img src="img2.jpg">
+    <img src="img3.jpg">
+    <img src="img4.jpg">
+    <img src="img5.jpg">
+    <img src="img6.jpg">
+    <img src="img7.jpg">
+    <img src="img8.jpg">
+    <img src="img9.jpg">
+    <img src="img10.jpg">
+    <img src="img11.jpg">
+    <img src="img12.jpg">
+    <img src="img13.jpg">
+    <img src="img14.jpg">
+    <img src="img15.jpg">
+    <img src="img16.jpg">
+    <img src="img17.jpg">
+    <img src="img18.jpg">
+    <img src="img19.jpg">
+    <img src="img20.jpg">
+    </div>   
+</div>
+
+<h2 id="pellamgaru"></h2>
+<p id="text"></p>
+<p id="timer"></p>
+<!-- 🎵 SONG ADDED HERE -->
+<audio controls loop>
+    <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" width="220">
+
+<br>
+
+<button class="btn yes" onclick="forgive()">Yes 🥺</button>
+<button class="btn no" id="noBtn">No 😅</button>
+
+<br>
+<button class="btn yes" onclick="openLetter()">Read My Heart 💌</button>
+
+<br><br>
+<h3>Tap this… 🥺</h3>
+<button class="btn yes" onclick="love1()">Love you 1 💖</button>
+<button class="btn yes" onclick="love2()">Love you 2 💞</button>
+<button class="btn yes" onclick="love3()">Love you 3 💘</button>
+
+<div id="letter">
+<h3>For You ❤️</h3>
+<p>
+ah 2 dyss lagaa lyfff long chusukunta anta marutaa nannaaa plzz nanna nv maripo nanna plzz aruvu kopam padu nak na nanaa kavali na bujji baby kavali nak nanna plzz nanna plz nanna i beg uhh "ONE LAST CHANCE" PLZBNGRM Na bujji BABYkadaa plzz oka sariki nijamgaa marutaa nanna ah roju lagane maripota nanaa pakka nanalu IM REALLYYYYYY SORRYYYYYYY oka sariki plzz forgive me nana pakka marutaa nanaa antiki prati oka danki sry nanna nv naa pranamm na princesss muah MY LOVEEEEE WI8TING r MY(NANNA)BUJJI BBYYYYY ANNI CHEYDAM  plzz nana anni cheydamm plz kalisii undali ammoooo hyd newyork anni cheydam anta marutaa eyy plzz eyyyy pellamm kada heheheheh entee eyy ahh entiiii mogudu mataa vinavaa dongaa pilla ahh na manasu docheseee aslaaa epd emoo ele poooo sryy bngrm MY LOVEEEEEEEEEEEEEEUUUUUUU🥺💖
+</p>
+<button onclick="closeLetter()">Close</button>
+</div>
+
+<br><br>
+<h2>Catch My Love 💖</h2>
+<p>Score: <span id="score">0</span></p>
+<button class="btn yes" onclick="startGame()">Start Game 🎮</button>
+
+<div id="gameArea"></div>
+
+<audio autoplay loop>
+<source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+document.getElementById("pellamgaru").innerHTML =
+"Nanna ❤️ You Mean Everything To Me";
+
+let message = "I’m really sorry Nanna... I didn’t mean to hurt you.oka sariki nammu nannaa that i lovee u so muchh nanna andd i will do anything for uhh nanna nijamgaa i will dooo any thing nannaa any thinggg plzz chalaa sufer chesya nenu ninnu naku ardam avutundi nana oka sarikii nannu nammu bujjiammaa  You are everything to me and I miss you so much. Please forgive me my love ❤️ninnu love chestunna chestunna antuna kani ninnu baga chhusukoleka potunna nanna aslaaa chinanaa butt nijamgaa I’m really sorry Nanna... I didn’t mean to hurt you. You are everything to me and I miss you so much. Please forgive me loveyouuuuuuuuuuuuu loveuu so muchhhh please dont leave meeeee nannaa i cnt leave without uhhh nannaaaaaaa muaahh nijamagaa chalaaa sry nanana chalaa chalaa chalaa nanaluu nijamgaa oka sari nammi chuduu nanna plzz pranam aina echesta ididnt mean to hurt uhh nanna enni sarlu chance echyavv but nannaa oka sari last nana nv lekunda batakalen nannaa nijamgaa i cnt nannaaaaaaa reallyyy aslaaaa ur my lovee nannaa chalaa premagaa chusukutnaa nanna anta vadleye nanna future lo ink bagaa na ollo nee petukuntaa oka pani cheyanivan nannaa bangaram laga chusukuntaa plz nanna epd dakaa jaregenave emeee mansulo petukok nanana plzz lets start freshlyy bngrmmmm plzzz nannaa ah 2 dys laga nenu ninnu premistaa nv alane undu nannaa ah 2 dys laga lyf long undamm nannaaliuuuu plzzzz nanna nammu nannaa i will not break uh nannaaaaaaaa nammu bngrmmmmmmm loveuhhhhhhhhhhhhh my lveeeeeeeeeeeeee my bngrmmm muaahhhhhh nanaluuuu muaahhhhh plzz forgive me nannaa aslaa bayapadak nanna nenu marchukunta nannu ne ksmm nannaaa pakkaa nanna malla preminchukundamaaa?? will u bee mineee??? 🥺❤️";
+
+
+let i = 0;
+function type() {
+    if (i < message.length) {
+        document.getElementById('text').innerHTML += message.charAt(i);
+        i++;
+        setTimeout(type, 50);
+    }
+}
+type();
+
+let startDate = new Date("2023-11-21");
+setInterval(() => {
+    let now = new Date();
+    let diff = now - startDate;
+    let days = Math.floor(diff / (1000*60*60*24));
+
+    document.getElementById("timer").innerHTML =
+        "Every day with you matters ❤️ It's been " + days + " days since I started loving you 💖";
+}, 1000);
+
+let index = 0;
+const slides = document.getElementById("slides");
+const totalImages = 20;
+
+setInterval(() => {
+    index++;
+    if (index >= totalImages) index = 0;
+    slides.style.transform = "translateX(" + (-300 * index) + "px)";
+}, 2000);
+
+function forgive() {
+    alert("Thank you Nanna 🥺❤️ I love you so much 🤗😘");
+}
+function love1() { alert("I love you more than yesterday my pellamm my i loveuuu like hellll nannaa muaah ur my whole worlddd💖"); }
+function love2() { alert("I love you more than anyone i will change for uhh dammm suree i will nanna just trust me oncesssbngrmm🥺💞"); }
+function love3() { alert("I will love you forever nd everrr untill our death aparts us muahh my bujji bbyyyyluuu isnt bare minumumm?????? ❤️💘"); }
+
+
+
+let noBtn = document.getElementById("noBtn");
+noBtn.addEventListener("mouseover", () => {
+    noBtn.style.top = Math.random() * window.innerHeight + "px";
+    noBtn.style.left = Math.random() * window.innerWidth + "px";
+});
+
+function openLetter() {
+    document.getElementById("letter").style.display = "block";
+}
+function closeLetter() {
+    document.getElementById("letter").style.display = "none";
+}
+
+function createHeart() {
+    let heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 5000);
+}
+setInterval(createHeart, 300);
+
+document.addEventListener("click", function(e) {
+    let heart = document.createElement("div");
+    heart.innerHTML = "💖";
+    heart.style.position = "fixed";
+    heart.style.left = e.clientX + "px";
+    heart.style.top = e.clientY + "px";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 1000);
+});
+
+let score = 0;
+let gameInterval;
+
+function startGame() {
+    score = 0;
+    document.getElementById("score").innerText = score;
+    document.getElementById("gameArea").innerHTML = "";
+
+    clearInterval(gameInterval);
+    gameInterval = setInterval(createFallingHeart, 700);
+}
+
+function createFallingHeart() {
+    const heart = document.createElement("div");
+    heart.innerHTML = "💖";
+    heart.style.position = "absolute";
+    heart.style.left = Math.random() * 90 + "%";
+    heart.style.top = "0px";
+    heart.style.fontSize = "25px";
+
+    document.getElementById("gameArea").appendChild(heart);
+
+    let fall = setInterval(() => {
+        heart.style.top = (heart.offsetTop + 5) + "px";
+
+        if (heart.offsetTop > 300) {
+            heart.remove();
+            clearInterval(fall);
+        }
+    }, 50);
+
+    heart.onclick = () => {
+        score++;
+        document.getElementById("score").innerText = score;
+        heart.remove();
+        clearInterval(fall);
+
+        if (score == 9) {
+            alert("You caught my heart 💖🥺");
+        }
+    };
+}
+
+</script>
+
+</body>
+</html>
